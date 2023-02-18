@@ -1,0 +1,75 @@
+body {
+  background:#6b6b69;
+  color:white;
+}
+
+
+#title {
+  font-size:28px;
+  text-align: center;
+}
+
+#rest1 {
+  font-size:20px;
+  text-align: center;
+}
+
+#text div {
+  position:relative;
+  height: 200px;
+  width: 200px;
+  border: 1px dashed gray;
+  display: inline-block;
+  margin: 0;
+}
+
+#text {
+  width:615px;
+  height:820px;
+  background:black;
+  border:5px solid black;
+  margin:auto;
+}
+
+#images {
+  width: 100%
+}
+
+img {
+  height: 200px;
+  width: 200px;
+}
+
+#drag1,
+#drag2,
+#drag3,
+#drag4,
+#drag5,
+#drag6,
+#drag7,
+#drag8,
+#drag9
+#drag10
+#drag11
+#drag12 {
+  height: 200px;
+  width: 200px;
+  
+  display: inline-block;
+}
+
+#Button
+{
+font-size: 28px;
+box-sizing: border-box;
+color:white;
+background-color:rgb(55, 9, 220);
+}
+#Button:active{
+
+  background-color:  rgb(0, 255, 213);
+  
+  }
+
+  
+
