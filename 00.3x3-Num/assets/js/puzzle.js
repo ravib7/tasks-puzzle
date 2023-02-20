@@ -77,60 +77,11 @@ function chkFillSeq() {
 
 
 
-const Button = document.querySelector(".save");
-
-function checkSorted(array) {
-
-    if (array.length == 9) {
-        for (let i = 0; i < array.length; i++) {
-            if (array[i] > array[i + 1]) {
-                alert("The numbers are not arranged sequentially!!!!");
-                return false;
-            }
-            else {
-                continue;
-            }
-
-        }
-        Button.disabled = false;
-        alert("Great job :)" );
-    }
-    else {
-        alert("please arrange all numbers!!!")       
-    }
-
-}
 
 
 
-function showMessage() {
-    // var board = document.getElementById('text');
-    // for (var i = 0; i < board.length; i++) {
-    //     console.log(board[i]);
-    // }
-    debugger;
-    // get the parent element
-    const parent = document.getElementById('text');
-
-    // get all child div elements
-    const childDivs = parent.querySelectorAll('div');
-
-    // create an empty array to store the div elements that contain an image
-    const divsWithImages = [];
-
-    // iterate over all child div elements and check whether they contain an image
-    childDivs.forEach(childDiv => {
-        const images = childDiv.querySelectorAll('img');
-        if (images.length > 0) {
-            // console.log(images.length);
-            divsWithImages.push(images[0].id.substr(4));
-        }
-    });
-    // divsWithImages array now contains all child div elements that contain an image tag
-    console.log("showMessage()");
-    // alert(divsWithImages);
-    checkSorted("showMessage()");
-}
 
 
 
+
+showMessage().Write("<script language=\"JavaScript\">alert(\"write here what you want\")</script>");

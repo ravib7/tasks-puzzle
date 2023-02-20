@@ -21,7 +21,7 @@ const myButton = document.querySelector(".save");
 
 function checkSorted(array) {
 
-    if (array.length == 9) {
+    if (array.length == 3) {
         for (let i = 0; i < array.length; i++) {
             if (array[i] > array[i + 1]) {
                 alert("The numbers are not arranged sequentially!!!!");
@@ -81,7 +81,7 @@ const Button = document.querySelector(".save");
 
 function checkSorted(array) {
 
-    if (array.length == 9) {
+    if (array.length == 3) {
         for (let i = 0; i < array.length; i++) {
             if (array[i] > array[i + 1]) {
                 alert("The numbers are not arranged sequentially!!!!");

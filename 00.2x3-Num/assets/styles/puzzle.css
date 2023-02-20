@@ -25,7 +25,7 @@ body {
 
 #text {
   width:614px;
-  height:614px;
+  height:409px;
   background:black;
   border:5px solid black;
   margin:auto;
@@ -45,10 +45,8 @@ img {
 #drag3,
 #drag4,
 #drag5,
-#drag6,
-#drag7,
-#drag8,
-#drag9 {
+#drag6
+ {
   height: 200px;
   width: 200px;
   
