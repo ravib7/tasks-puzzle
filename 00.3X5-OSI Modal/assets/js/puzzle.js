@@ -21,7 +21,7 @@ const myButton = document.querySelector(".save");
 
 function checkSorted(array) {
 
-    if (array.length == 9) {
+    if (array.length == 7) {
         for (let i = 0; i < array.length; i++) {
             if (array[i] > array[i + 1]) {
                 alert("The numbers are not arranged sequentially!!!!");
@@ -74,9 +74,14 @@ function chkFillSeq() {
 
 
 
+
+
+
+const Button = document.querySelector(".save");
+
 function checkSorted(array) {
 
-    if (array.length == 9) {
+    if (array.length == 7) {
         for (let i = 0; i < array.length; i++) {
             if (array[i] > array[i + 1]) {
                 alert("The numbers are not arranged sequentially!!!!");
@@ -87,14 +92,13 @@ function checkSorted(array) {
             }
 
         }
-        myButton.disabled = true;
-        alert("Great job :)");
+        Button.disabled = false;
+        alert("Great job :)" );
     }
     else {
-        alert("please arrange all numbers!!!")
+        alert("please arrange all numbers!!!")       
     }
 
-   
 }
 
 
@@ -123,7 +127,13 @@ function showMessage() {
         }
     });
     // divsWithImages array now contains all child div elements that contain an image tag
-    console.log("showMessage");
-    // alert(divsWithshowMessage);
-    checkSorted("showMessage");
+    console.log("showMessage()");
+    // alert(divsWithImages);
+    checkSorted("showMessage()");
 }
+
+
+
+
+
+
