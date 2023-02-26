@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<head>
+
+<title>00.1X7-ModelControl</title>
+<link rel="stylesheet" href="assets/styles/puzzle.css">
+
+</head>
+
+<body>
+
+  <div class="info">
+    <div id="title">ModelControl</div>
+    <br>    
+    <div id="rest1">Drag and drop the colored pieces on the puzzle below. (better images are on their way) </div>
+    <div id="rest1">You can put multiple pieces in the same area but you can't interchange them, only the last one you put will be accessible.</div>
+  </div>
+
+
+  <br>
+  
+<div id="myimages">
+  <img id="img7"  src="assets\img\1.png">                  
+  <img id="img8"  src="assets\img\2.png">
+  <img id="img9" src="assets\img\3.png">
+  <img id="img10" src="assets\img\4.png">
+  <img id="img11" src="assets\img\5.png">     
+  <img id="img12" src="assets\img\6.png">
+  </div>
+
+
+  <div id="text">
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  </div>
+  
+<br>
+
+
+
+<div id="images">
+  <img id="drag1"  src="assets\img\50X50.jpg"   draggable="true" ondragstart="drag(event)">
+  <img id="drag2"  src="assets\img\50X50.jpg"   draggable="true" ondragstart="drag(event)">              
+  <img id="drag3"  src="assets\img\50X50.jpg"   draggable="true" ondragstart="drag(event)">
+  <img id="drag4"  src="assets\img\50X50.jpg"   draggable="true" ondragstart="drag(event)">
+  <img id="drag5"  src="assets\img\50X50.jpg"   draggable="true" ondragstart="drag(event)">
+  <img id="drag6"  src="assets\img\50X50.jpg"   draggable="true" ondragstart="drag(event)">
+</div>
+
+<input type="button" id="Button" value="Check Fill Sequence" onClick="chkFillSeq()" />
+  
+  
+  <!-- <input type="button" id="Button" value="Save" onClick="showMessage()" /> -->
+
+
+
+     
+  <script src="assets/js/puzzle.js"></script>
+   
+</body>

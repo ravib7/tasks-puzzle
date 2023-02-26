@@ -34,12 +34,12 @@ body {
   border:5px solid black;
   margin:auto;
   margin-top: 5px;
-  margin-left: 370px;
+  margin-left: 317px;
   
 }
 
 #images {
-  margin-left: 372.5px;
+  margin-left: 317.5px;
   display: flex;
   gap: 7.5px;
 }
@@ -58,7 +58,6 @@ img {
 #drag4,
 #drag5,
 #drag6
-
  {
   height: 100px;
   width: 100px;
@@ -81,10 +80,12 @@ background-color:rgb(55, 9, 220);
   
   }
 
-#images {
+#myimages {
   height: 100px;
   width: 100px;
-  margin-left: 372.5px;
+  border: 1px dashed gray;
+  margin-left: 317px;
+  margin-top: 50px;
   display: flex;
   gap: 7.5px;
 }
