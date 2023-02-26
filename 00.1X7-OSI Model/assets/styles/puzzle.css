@@ -68,6 +68,16 @@ img {
   display: inline-block;
 }
 
+#drag1:hover,
+#drag2:hover,
+#drag3:hover,
+#drag4:hover,
+#drag5:hover,
+#drag6:hover,
+#drag7:hover {
+  opacity: 0.6;
+}
+
 #Button
 {
 font-size: 17px;
@@ -75,14 +85,16 @@ margin-left: 30px;
 box-sizing: border-box;
 margin-top: 50px;
 margin-left: 30px;
+align-items: center;
 color:white;
-background-color:rgb(55, 9, 220);
+/* background-color:rgb(55, 9, 220); */
+background-color:#007bff;
 }
 #Button:active{
 
   background-color:  rgb(0, 255, 213);
   
-  }
+}
 
 #myimages {
   height: 100px;
@@ -94,6 +106,8 @@ background-color:rgb(55, 9, 220);
   gap: 6px;
   
 }
+
+
 
 
 
