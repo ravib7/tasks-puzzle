@@ -31,7 +31,7 @@ function chkFillSeq() {
 }
 
 function checkSorted(array) {
-  if (array.length === 5) {
+  if (array.length === 10) {
     for (let i = 0; i < array.length; i++) {
       if (array[i] > array[i + 1]) {
         alert("The numbers are not arranged sequentially!");
@@ -45,3 +45,16 @@ function checkSorted(array) {
 }
 
 myButton.addEventListener("click", chkFillSeq);
+
+function shuffleImages() {
+  var images = document.querySelectorAll("img");
+  var imgArray = Array.from(images);
+  imgArray.forEach(function(img) {
+    var randomIndex = Math.floor(Math.random() * imgArray.length);
+    var temp = imgArray[randomIndex].src;
+    imgArray[randomIndex].src = img.src;
+    img.src = temp;
+  });
+}
+
+window.onload = shuffleImages;

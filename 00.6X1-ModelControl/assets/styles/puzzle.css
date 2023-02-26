@@ -28,7 +28,7 @@ body {
 }
 
 #text {
-  width:580px;
+  width:629px;
   height: 101px;
   background:black;
   border:5px solid black;
@@ -81,12 +81,10 @@ background-color:rgb(55, 9, 220);
   
   }
 
-#myimages {
+#images {
   height: 100px;
   width: 100px;
-  border: 1px dashed gray;
   margin-left: 372.5px;
-  margin-top: 50px;
   display: flex;
   gap: 7.5px;
 }
