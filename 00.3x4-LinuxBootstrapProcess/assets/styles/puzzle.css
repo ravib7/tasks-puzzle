@@ -5,12 +5,12 @@ body {
 
 
 #title {
-  font-size:28px;
+  font-size:23px;
   text-align: center;
 }
 
 #rest1 {
-  font-size:20px;
+  font-size:18px;
   text-align: center;
 }
 
@@ -25,15 +25,14 @@ body {
 
 #text {
   width:312px;
-  height:312px;
+  height:417px;
   background:black;
   border:5px solid black;
   margin:auto;
 }
 
 #images {
-  width: 100%;
-  margin-left: 166px;
+  width: 100%
 }
 
 img {
@@ -49,7 +48,10 @@ img {
 #drag6,
 #drag7,
 #drag8,
-#drag9 {
+#drag9
+#drag10
+#drag11
+#drag12 {
   height: 100px;
   width: 100px;
   
@@ -58,8 +60,7 @@ img {
 
 #Button
 {
-font-size: 15px;
-margin-left: 30px;
+font-size: 18px;
 box-sizing: border-box;
 color:white;
 background-color:rgb(55, 9, 220);
@@ -69,4 +70,7 @@ background-color:rgb(55, 9, 220);
   background-color:  rgb(0, 255, 213);
   
   }
+
+  
+  
 

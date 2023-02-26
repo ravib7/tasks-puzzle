@@ -5,12 +5,12 @@ body {
 
 
 #title {
-  font-size:28px;
+  font-size:23px;
   text-align: center;
 }
 
 #rest1 {
-  font-size:20px;
+  font-size:17px;
   text-align: center;
 }
 
@@ -24,8 +24,8 @@ body {
 }
 
 #text {
-  width:312px;
-  height:312px;
+  width:313px;
+  height:207px;
   background:black;
   border:5px solid black;
   margin:auto;
@@ -33,7 +33,7 @@ body {
 
 #images {
   width: 100%;
-  margin-left: 166px;
+  margin-left: 324px;
 }
 
 img {
@@ -46,10 +46,8 @@ img {
 #drag3,
 #drag4,
 #drag5,
-#drag6,
-#drag7,
-#drag8,
-#drag9 {
+#drag6
+ {
   height: 100px;
   width: 100px;
   
@@ -58,7 +56,7 @@ img {
 
 #Button
 {
-font-size: 15px;
+font-size: 18px;
 margin-left: 30px;
 box-sizing: border-box;
 color:white;

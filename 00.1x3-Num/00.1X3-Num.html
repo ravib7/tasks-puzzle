@@ -2,7 +2,7 @@
 
 <head>
 
-<title>Puzzle Project</title>
+<title>00.1X3-Num</title>
 <link rel="stylesheet" href="assets/styles/puzzle.css">
 
 </head>
@@ -23,6 +23,8 @@
     <img id="drag2" src="assets\img\2.png" draggable="true" ondragstart="drag(event)">              
     <img id="drag3" src="assets\img\3.png" draggable="true" ondragstart="drag(event)">
   </div>
+
+  <br>
   
   <div id="text">
     <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
@@ -30,11 +32,13 @@
     <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
   </div>
 
+  
+
   <input type="button" id="Button" value="Check Fill Sequence" onClick="chkFillSeq()" />
   
   
-  <input type="button" id="Button" value="Save" onClick="showMessage()" />
-  
+  <!-- <input type="button" id="Button" value="Save" onClick="showMessage()" /> -->
+
      
   <script src="assets/js/puzzle.js"></script>
    

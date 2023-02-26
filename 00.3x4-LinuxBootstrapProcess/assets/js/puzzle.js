@@ -31,7 +31,7 @@ function chkFillSeq() {
 }
 
 function checkSorted(array) {
-  if (array.length === 9) {
+  if (array.length === 12) {
     for (let i = 0; i < array.length; i++) {
       if (array[i] > array[i + 1]) {
         alert("The numbers are not arranged sequentially!");
