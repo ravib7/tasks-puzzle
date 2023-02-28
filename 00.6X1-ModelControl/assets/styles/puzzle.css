@@ -21,16 +21,21 @@ body {
 #text div {
   position:relative;
   height: 100px;
-  width: 100px;
+  width: 99px;
   border: 1px dashed gray;
   display: inline-block;
   margin: 0;
 }
 
 #text {
+<<<<<<< HEAD
  /* width:608px;
   height: 101px;  */
   /* margin:  auto;  */
+=======
+  width: 624px;
+  height: 102px;
+>>>>>>> 90d10754d939f19bf0e7880da33b1bc48593f242
   background:black;
   border:4px solid black;
   margin-top: 5px; 
@@ -84,3 +89,24 @@ background-color:rgb(55, 9, 220);
   background-color:  rgb(0, 255, 213);
   
   }
+<<<<<<< HEAD
+=======
+#Button:hover {
+  opacity: 0.4;
+}
+
+#myimages {
+  height: 100px;
+  width: 100px;
+  border: 1px dashed gray;
+  margin-left: 317px;
+  margin-top: 50px;
+  display: flex;
+  gap: 7.5px;
+}
+
+
+
+
+
+>>>>>>> 90d10754d939f19bf0e7880da33b1bc48593f242

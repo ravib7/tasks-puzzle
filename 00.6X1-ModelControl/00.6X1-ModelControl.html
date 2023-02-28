@@ -2,7 +2,7 @@
 
 <head>
 
-<title>00.1X7-ModelControl</title>
+<title>00.6x1-ModelControl</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css">
 
 <link rel="stylesheet" href="assets/styles/puzzle.css">
@@ -11,11 +11,12 @@
 
 <body>
 
-  <div class="info">
+  <div class="info" style="align-items: center;">
     <div id="title">ModelControl</div>
     <br>    
-    <div id="rest1">Drag and drop the colored pieces on the puzzle below. (better images are on their way) </div>
-    <div id="rest1">You can put multiple pieces in the same area but you can't interchange them, only the last one you put will be accessible.</div>
+    
+    <div id="rest1" style="color: black;">Q. Arrange All The IPv6 Images in a proper Sequence</div>
+    
   </div>
 
 
@@ -45,22 +46,21 @@
 
 
 <div id="images">
-  <img id="drag1"  src="assets\img\50X50.jpg"   draggable="true" ondragstart="drag(event)">
-  <img id="drag2"  src="assets\img\50X50.jpg"   draggable="true" ondragstart="drag(event)">              
-  <img id="drag3"  src="assets\img\50X50.jpg"   draggable="true" ondragstart="drag(event)">
-  <img id="drag4"  src="assets\img\50X50.jpg"   draggable="true" ondragstart="drag(event)">
-  <img id="drag5"  src="assets\img\50X50.jpg"   draggable="true" ondragstart="drag(event)">
-  <img id="drag6"  src="assets\img\50X50.jpg"   draggable="true" ondragstart="drag(event)">
+  <img id="drag1"  src="assets\img\1.png"   draggable="true" ondragstart="drag(event)">
+  <img id="drag2"  src="assets\img\2.png"   draggable="true" ondragstart="drag(event)">              
+  <img id="drag3"  src="assets\img\3.png"   draggable="true" ondragstart="drag(event)">
+  <img id="drag4"  src="assets\img\4.png"   draggable="true" ondragstart="drag(event)">
+  <img id="drag5"  src="assets\img\5.png"   draggable="true" ondragstart="drag(event)">
+  <img id="drag6"  src="assets\img\6.png"   draggable="true" ondragstart="drag(event)">
 </div>
 
 <input type="button" id="Button" value="Check Fill Sequence" onClick="chkFillSeq()" />
   
   
   <input type="button" id="Button" value="Save" onClick="showMessage()" />
-  <a type="button" id="Button" href="file:///C:/xampp/htdocs/puzzle/00.7X1-ModelControl/00.7X1-ModelControl.html" class="previous">&laquo; Previous</a>
-  <a type="button" id="Button" href="00.6X1-ModelControl\00.6X1-ModelControl.html" class="next">Next &raquo;</a>
 
-  <button id="myButton" onclick="openNewPage()">Open New Page</button>
+
+
      
   <script src="assets/js/puzzle.js"></script>
    
