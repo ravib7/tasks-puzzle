@@ -34,20 +34,29 @@ function checkSorted(array) {
   if (array.length === 6) {
     for (let i = 0; i < array.length; i++) {
       if (array[i] > array[i + 1]) {
-        alert("The numbers are not arranged sequentially!");
+        alert("The Images are not arranged sequentially!");
         return false;
       }
     }
     alert("Congratulation You Completed Puzzle Successfully!");
   } else {
-    alert("Please arrange all numbers!");
+    alert("Please arrange all Images!");
   }
 }
-
 myButton.addEventListener("click", chkFillSeq);
 
-
-
+//Shuffle Images
+function shuffleImages() {
+  var imageContainer = document.getElementById("images");
+  var images = Array.from(imageContainer.children);
+  images.sort(function() { return 0.5 - Math.random() });
+  images.forEach(function(img) {
+    imageContainer.removeChild(img);
+  });
+  images.forEach(function(img) {
+    imageContainer.appendChild(img);
+  });
+}
 
 
 

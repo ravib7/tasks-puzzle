@@ -48,17 +48,19 @@ myButton.addEventListener("click", chkFillSeq);
 
 
 function shuffleImages() {
-  var images = document.querySelectorAll("img");
-  var imgArray = Array.from(images);
-  imgArray.forEach(function(img) {
-    var randomIndex = Math.floor(Math.random() * imgArray.length);
-    var temp = imgArray[randomIndex].src;
-    imgArray[randomIndex].src = img.src;
-    img.src = temp;
+  var imageContainer = document.getElementById("images");
+  var images = Array.from(imageContainer.children);
+  images.sort(function() { return 0.5 - Math.random() });
+  images.forEach(function(img) {
+    imageContainer.removeChild(img);
+  });
+  images.forEach(function(img) {
+    imageContainer.appendChild(img);
   });
 }
 
-
-
+function openNewPage() {
+  window.open("file:///C:/xampp/htdocs/puzzle/00.7X1-ModelControl/00.7X1-ModelControl.html");
+}
 
 

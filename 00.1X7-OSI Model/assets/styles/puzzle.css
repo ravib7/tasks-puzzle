@@ -22,14 +22,14 @@ body {
 #text div {
   position:relative;
   height:100px;
-  width: 100px;
+  width: 99px;
   border: 1px dashed gray;
   display: inline-block;
   margin: 0;
 }
 
 #text {
-  width:734px;
+  width:730px;
   height:101px;
   background:black;
   border:5px solid black;

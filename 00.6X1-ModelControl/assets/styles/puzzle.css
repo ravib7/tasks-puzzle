@@ -21,15 +21,15 @@ body {
 #text div {
   position:relative;
   height: 100px;
-  width: 100px;
+  width: 99px;
   border: 1px dashed gray;
   display: inline-block;
   margin: 0;
 }
 
 #text {
-  width:629px;
-  height: 101px;
+  width: 624px;
+  height: 102px;
   background:black;
   border:5px solid black;
   margin:auto;
@@ -79,6 +79,9 @@ background-color:rgb(55, 9, 220);
   background-color:  rgb(0, 255, 213);
   
   }
+#Button:hover {
+  opacity: 0.4;
+}
 
 #myimages {
   height: 100px;
@@ -92,5 +95,5 @@ background-color:rgb(55, 9, 220);
 
 
 
-  
+
 
