@@ -47,15 +47,22 @@ function checkSorted(array) {
 myButton.addEventListener("click", chkFillSeq);
 
 
-function openNewPage() {
-  window.open("file:///C:/xampp/htdocs/puzzle/00.7X1-ModelControl/00.7X1-ModelControl.html");
+
+
+function shuffleImages() {
+  var imageContainer = document.getElementById("images");
+  var images = Array.from(imageContainer.children);
+  images.sort(function() { return 0.5 - Math.random() });
+  images.forEach(function(img) {
+    imageContainer.removeChild(img);
+  });
+  images.forEach(function(img) {
+    imageContainer.appendChild(img);
+  });
 }
 
 
 
-
-
-
-
-
-
+function openNewPage() {
+  window.open("http://127.0.0.1:5555/00.7X1-ModelControl/00.7X1-ModelControl.html");
+}
