@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<head>
+
+<title>00.1X7-ModelControl</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="assets/styles/puzzle.css">
+
+</head>
+
+<body>
+
+ <div class="info"> 
+    <div id="title">ModelControl</div>
+    <br>    
+    <div id="rest1">Drag and drop the colored pieces on the puzzle below. (better images are on their way) </div>
+    <div id="rest1">You can put multiple pieces in the same area but you can't interchange them, only the last one you put will be accessible.</div>
+  </div>
+
+
+  <br>
+  
+<div id="myimages">
+  <img id="img7"  src="assets\img\ipv4 new.jpg">                  
+  <img id="img8"  src="assets\img\2.png">
+  <img id="img9" src=" assets\img\3.png">
+  <img id="img10" src="assets\img\4.png">
+  <img id="img11" src="assets\img\5.png">     
+  <img id="img12" src="assets\img\6.png">
+  </div>
+
+
+  <div id="text">
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  </div>
+  
+<br>
+
+
+
+<div id="images">
+  <img id="drag1"  src="assets\img\ipv6-1.jpg"   draggable="true" ondragstart="drag(event)">
+  <img id="drag2"  src="assets\img\2.jpg"   draggable="true" ondragstart="drag(event)">              
+  <img id="drag3"  src="assets\img\3.jpg"   draggable="true" ondragstart="drag(event)">
+  <img id="drag4"  src="assets\img\4.jpg"   draggable="true" ondragstart="drag(event)">
+  <img id="drag5"  src="assets\img\5.jpg"   draggable="true" ondragstart="drag(event)">
+  <img id="drag6"  src="assets\img\6.jpg"   draggable="true" ondragstart="drag(event)">
+</div>
+
+   <input type="button" id="Button" value="Check Fill Sequence" onClick="chkFillSeq()" />
+  
+  
+   <input type="button" id="myButton" value="Shuffle" onclick="shuffleImages()" /> 
+
+
+   <button id="myButton" onclick="openNewPage()">Next</button>
+
+
+
+  <script src="assets/js/puzzle.js"></script>
+   
+</body>
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>00.1X7-ModelControl</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/styles/puzzle.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8">
+        <div class="info">
+          <div id="title">ModelControl</div>
+          <br>
+          <div class="rest">Drag and drop the colored pieces on the puzzle below. (better images are on their way) </div>
+          <div class="rest">You can put multiple pieces in the same area but you can't interchange them, only the last one you put will be accessible.</div>
+        </div>
+        <br>
+        <div id="myimages" class="row justify-content-center">
+          <div class="col-4 col-md-2"><img id="img7" src="assets\img\1.png"></div>
+          <div class="col-4 col-md-2"><img id="img8" src="assets\img\2.png"></div>
+          <div class="col-4 col-md-2"><img id="img9" src="assets\img\3.png"></div>
+          <div class="col-4 col-md-2"><img id="img10" src="assets\img\4.png"></div>
+          <div class="col-4 col-md-2"><img id="img11" src="assets\img\5.png"></div>
+          <div class="col-4 col-md-2"><img id="img12" src="assets\img\6.png"></div>
+        </div>
+        <div id="text" class="row justify-content-center">
+          <div class="col-4 col-md-2" ondrop="drop(event)" ondragover="allowDrop(event)" id="div1"></div>
+          <div class="col-4 col-md-2" ondrop="drop(event)" ondragover="allowDrop(event)" id="div2"></div>
+          <div class="col-4 col-md-2" ondrop="drop(event)" ondragover="allowDrop(event)" id="div3"></div>
+          <div class="col-4 col-md-2" ondrop="drop(event)" ondragover="allowDrop(event)" id="div4"></div>
+          <div class="col-4 col-md-2" ondrop="drop(event)" ondragover="allowDrop(event)" id="div5"></div>
+          <div class="col-4 col-md-2" ondrop="drop(event)" ondragover="allowDrop(event)" id="div6"></div>
+        </div>
+    <div class="col-12 col-md-6">
+      <div id="images" class="d-flex justify-content-between">
+        <img id="drag1" src="assets/img/50X50.jpg" draggable="true" ondragstart="drag(event)">
+        <img id="drag2" src="assets/img/50X50.jpg" draggable="true" ondragstart="drag(event)">              
+        <img id="drag3" src="assets/img/50X50.jpg" draggable="true" ondragstart="drag(event)">
+        <img id="drag4" src="assets/img/50X50.jpg" draggable="true" ondragstart="drag(event)">
+        <img id="drag5" src="assets/img/50X50.jpg" draggable="true" ondragstart="drag(event)">
+        <img id="drag6" src="assets/img/50X50.jpg" draggable="true" ondragstart="drag(event)">
+      </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-center mb-4">
+    <div class="col-12 col-md-6">
+      <div class="info text-center">
+        <div id="title">ModelControl</div>
+        <br>    
+        <div class="rest" id="rest1">Drag and drop the colored pieces on the puzzle below. (better images are on their way) </div>
+        <div class="rest" id="rest1">You can put multiple pieces in the same area but you can't interchange them, only the last one you put will be accessible.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-center mb-4">
+    <div class="col-12 col-md-6">
+      <div id="text" class="d-flex justify-content-between">
+        <div id="div1" class="droppable" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div2" class="droppable" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div3" class="droppable" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div4" class="droppable" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div5" class="droppable" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div6" class="droppable" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-6">
+      <div class="text-center">
+        <input type="button" class="btn btn-primary" id="Button" value="Check FillSeq()" />
+        <script src="assets/js/puzzle.js"></script>
+   
+      </body> -->

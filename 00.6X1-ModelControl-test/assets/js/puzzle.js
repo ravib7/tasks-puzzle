@@ -43,19 +43,12 @@ function checkSorted(array) {
     alert("Please arrange all Images!");
   }
 }
+
 myButton.addEventListener("click", chkFillSeq);
 
-<<<<<<< HEAD
-
-function openNewPage() {
-  window.open("file:///C:/xampp/htdocs/puzzle/00.7X1-ModelControl/00.7X1-ModelControl.html");
-}
 
 
 
-
-=======
-//Shuffle Images
 function shuffleImages() {
   var imageContainer = document.getElementById("images");
   var images = Array.from(imageContainer.children);
@@ -67,9 +60,9 @@ function shuffleImages() {
     imageContainer.appendChild(img);
   });
 }
->>>>>>> 90d10754d939f19bf0e7880da33b1bc48593f242
 
 
 
-
-
+function openNewPage() {
+  window.open("http://127.0.0.1:5555/00.7X1-ModelControl/00.7X1-ModelControl.html");
+}
